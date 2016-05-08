@@ -1,5 +1,3 @@
-// TODO: change _pageUrl to source_URL in template and here
-
 var juices = [
 	{
 		"ounces": "14oz",
@@ -14,7 +12,7 @@ var juices = [
 		"Grapefruit": "20",
 		"id": 1,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/e0/ef/e0efbf08f6a63b1b96073b5b66336407.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/citrus-sensation-30"
+		"source_URL": "https://juicerecipes.com/recipes/citrus-sensation-30"
 	},
 	{
 		"ounces": "24oz",
@@ -32,7 +30,7 @@ var juices = [
 		"Spinach": "6",
 		"id": 2,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/a7/c7/a7c784c5ac5363c5e2ae7f4a069794a8.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/hulk-blood-57"
+		"source_URL": "https://juicerecipes.com/recipes/hulk-blood-57"
 	},
 	{
 		"ounces": "32oz",
@@ -49,7 +47,7 @@ var juices = [
 		"Lemon": "3",
 		"id": 3,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/c0/31/c031bd3f65c5ee21ae488159bf023bcf.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/heart-beet-78"
+		"source_URL": "https://juicerecipes.com/recipes/heart-beet-78"
 	},
 	{
 		"ounces": "24oz",
@@ -68,7 +66,7 @@ var juices = [
 		"Lemon": "5",
 		"id": 4,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/dc/69/dc692019a1328979fb0306866b3dca7f.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/beets-and-treats-76"
+		"source_URL": "https://juicerecipes.com/recipes/beets-and-treats-76"
 	},
 	{
 		"ounces": "32oz",
@@ -86,7 +84,7 @@ var juices = [
 		"Ginger Root": "1",
 		"id": 5,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/e2/30/e23093f95c31bd5729be4d1d399b28d6.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/beginner-green-59"
+		"source_URL": "https://juicerecipes.com/recipes/beginner-green-59"
 	},
 	{
 		"ounces": "18oz",
@@ -106,7 +104,7 @@ var juices = [
 		"Salt": "0",
 		"id": 6,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/65/b5/65b52dfa2d29163e559b37db01623b8b.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/viva-forever-2750"
+		"source_URL": "https://juicerecipes.com/recipes/viva-forever-2750"
 	},
 	{
 		"ounces": "24oz",
@@ -125,7 +123,7 @@ var juices = [
 		"Olive Oil": "2",
 		"id": 7,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/de/6b/de6b663e7242690f5fb6e6e21489c060.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/arthritis-soother-36"
+		"source_URL": "https://juicerecipes.com/recipes/arthritis-soother-36"
 	},
 	{
 		"ounces": "26oz",
@@ -140,7 +138,7 @@ var juices = [
 		"Peach": "28",
 		"id": 8,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/e9/65/e96557056bb8c9d121bc87878ad39300.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/coconut-splash-74"
+		"source_URL": "https://juicerecipes.com/recipes/coconut-splash-74"
 	},
 	{
 		"ounces": "9oz",
@@ -155,7 +153,7 @@ var juices = [
 		"Asparagus": "16",
 		"id": 9,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/7d/ac/7dac1390c35e7e190fd6c598407cfb03.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/asparagus-delight-2"
+		"source_URL": "https://juicerecipes.com/recipes/asparagus-delight-2"
 	},
 	{
 		"ounces": "30oz",
@@ -173,7 +171,7 @@ var juices = [
 		"Ginger Root": "2",
 		"id": 10,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/63/fc/63fc153ce990dbf077726d9e63c9f051.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/mean-green-25"
+		"source_URL": "https://juicerecipes.com/recipes/mean-green-25"
 	},
 	{
 		"ounces": "18oz",
@@ -191,7 +189,7 @@ var juices = [
 		"Ginger Root": "1",
 		"id": 11,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/e8/77/e877bec272f192ed7fdc2b9b00039271.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/liver-scrubber-33"
+		"source_URL": "https://juicerecipes.com/recipes/liver-scrubber-33"
 	},
 	{
 		"name": "Mexican-Style Jugo",
@@ -207,7 +205,7 @@ var juices = [
 		"Lime": "3",
 		"id": 12,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/66/a2/66a2204be0d9817f76cb6f2fcb07e1d1.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/mexican-style-jugo-64"
+		"source_URL": "https://juicerecipes.com/recipes/mexican-style-jugo-64"
 	},
 	{
 		"ounces": "13oz",
@@ -224,7 +222,7 @@ var juices = [
 		"Parsley": "7",
 		"id": 13,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/0d/01/0d01d8222c07cf69c3c78f6dc62eb5c0.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/the-beet-goes-on-13"
+		"source_URL": "https://juicerecipes.com/recipes/the-beet-goes-on-13"
 	},
 	{
 		"ounces": "22oz",
@@ -240,7 +238,7 @@ var juices = [
 		"Peppermint": "0",
 		"id": 14,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/97/b1/97b1da5e86fc684f976351d622c63a04.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/bunny-brew-120"
+		"source_URL": "https://juicerecipes.com/recipes/bunny-brew-120"
 	},
 	{
 		"ounces": "26oz",
@@ -260,7 +258,7 @@ var juices = [
 		"Honey": "1",
 		"id": 15,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/eb/1f/eb1f5ef30a68d149ba473352291d9a3e.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/sweet-n-tart-citrus-63"
+		"source_URL": "https://juicerecipes.com/recipes/sweet-n-tart-citrus-63"
 	},
 	{
 		"ounces": "16oz",
@@ -277,7 +275,7 @@ var juices = [
 		"Cayenne Pepper (spice)": "0",
 		"id": 16,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/c8/ae/c8aefa3a351db1c899c5caf993790a1b.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/mangolicious-citrus-96"
+		"source_URL": "https://juicerecipes.com/recipes/mangolicious-citrus-96"
 	},
 	{
 		"ounces": "32oz",
@@ -297,7 +295,7 @@ var juices = [
 		"Ginger Root": "1",
 		"id": 17,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/b7/06/b7066d270ac80eec8e527cdc10d42e47.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/dr-ozs-green-drink-47"
+		"source_URL": "https://juicerecipes.com/recipes/dr-ozs-green-drink-47"
 	},
 	{
 		"ounces": "28oz",
@@ -314,7 +312,7 @@ var juices = [
 		"Cayenne Pepper (spice)": "0",
 		"id": 18,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/17/05/1705cdfa4076a4d086810adc7e5fcf5a.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/summer-breeze-72"
+		"source_URL": "https://juicerecipes.com/recipes/summer-breeze-72"
 	},
 	{
 		"ounces": "12oz",
@@ -329,7 +327,7 @@ var juices = [
 		"Lemon": "6",
 		"id": 19,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/3b/75/3b7527d2a83882f02cfde61df55c52a7.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/pomegranate-plus-95"
+		"source_URL": "https://juicerecipes.com/recipes/pomegranate-plus-95"
 	},
 	{
 		"ounces": "32oz",
@@ -346,7 +344,7 @@ var juices = [
 		"Lemon": "3",
 		"id": 20,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/7e/54/7e54b7f02fab219e4b526b01fc52b51a.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/peach-medley-101"
+		"source_URL": "https://juicerecipes.com/recipes/peach-medley-101"
 	},
 	{
 		"ounces": "32oz",
@@ -366,7 +364,7 @@ var juices = [
 		"Lemon": "2",
 		"id": 21,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/d9/31/d93106981e79cb5a797ea56e8f0f68b3.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/green-cheer-119"
+		"source_URL": "https://juicerecipes.com/recipes/green-cheer-119"
 	},
 	{
 		"ounces": "32oz",
@@ -383,7 +381,7 @@ var juices = [
 		"Lemon": "5",
 		"id": 22,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/84/f6/84f6c220b357fc656a1228d96e1394a0.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/green-aid-82"
+		"source_URL": "https://juicerecipes.com/recipes/green-aid-82"
 	},
 	{
 		"ounces": "18oz",
@@ -400,7 +398,7 @@ var juices = [
 		"Ginger Root": "2",
 		"id": 23,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/2b/1f/2b1f5952605c43275e61cb6b89d97d86.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/tropical-green-87"
+		"source_URL": "https://juicerecipes.com/recipes/tropical-green-87"
 	},
 	{
 		"ounces": "32oz",
@@ -416,7 +414,7 @@ var juices = [
 		"Basil (fresh)": "0",
 		"id": 24,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/37/d4/37d42110b29aa4ab0e3c67f617fa93ff.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/peachy-keen-73"
+		"source_URL": "https://juicerecipes.com/recipes/peachy-keen-73"
 	},
 	{
 		"ounces": "28oz",
@@ -431,7 +429,7 @@ var juices = [
 		"Carrot": "23",
 		"id": 25,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/70/3b/703ba670074cd51430e506bf64cb945b.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/fresh-start-28"
+		"source_URL": "https://juicerecipes.com/recipes/fresh-start-28"
 	},
 	{
 		"ounces": "16oz",
@@ -450,7 +448,7 @@ var juices = [
 		"Lime": "2",
 		"id": 26,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/1d/d4/1dd44ef65390c2dab590508b65f5788e.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/force-field-2752"
+		"source_URL": "https://juicerecipes.com/recipes/force-field-2752"
 	},
 	{
 		"ounces": "18oz",
@@ -467,7 +465,7 @@ var juices = [
 		"Ginger Root": "2",
 		"id": 27,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/94/52/94520c20b1f9b8bacfbc2919fb0e18b3.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/pink-pom-118"
+		"source_URL": "https://juicerecipes.com/recipes/pink-pom-118"
 	},
 	{
 		"ounces": "30oz",
@@ -487,7 +485,7 @@ var juices = [
 		"Ginger Root": "2",
 		"id": 28,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/e7/f2/e7f25bf2d5ec2ec28a0f833005ff1af5.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/radiant-red-108"
+		"source_URL": "https://juicerecipes.com/recipes/radiant-red-108"
 	},
 	{
 		"ounces": "12oz",
@@ -503,7 +501,7 @@ var juices = [
 		"Peppermint": "0",
 		"id": 29,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/45/16/451606119f187e229cffe7ce8c3e5053.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/minty-berry-44"
+		"source_URL": "https://juicerecipes.com/recipes/minty-berry-44"
 	},
 	{
 		"ounces": "20oz",
@@ -522,7 +520,7 @@ var juices = [
 		"Nutmeg (ground)": "0",
 		"id": 30,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/c4/d6/c4d64f0ce50f961b573bbdccd01e2419.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/pumpkin-cordial-116"
+		"source_URL": "https://juicerecipes.com/recipes/pumpkin-cordial-116"
 	},
 	{
 		"ounces": "24oz",
@@ -539,7 +537,7 @@ var juices = [
 		"Lettuce (romaine)": "11",
 		"id": 31,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/1b/84/1b84f1216a5878ec19c1ac35cbb54248.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/romaine-apple-orange-45"
+		"source_URL": "https://juicerecipes.com/recipes/romaine-apple-orange-45"
 	},
 	{
 		"ounces": "28oz",
@@ -553,7 +551,7 @@ var juices = [
 		"Tomato": "18",
 		"id": 32,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/3e/c1/3ec13e3fe4f374cb387afb65d7b1bf1a.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/summer-melon-39"
+		"source_URL": "https://juicerecipes.com/recipes/summer-melon-39"
 	},
 	{
 		"name": "Hangover Shot",
@@ -567,7 +565,7 @@ var juices = [
 		"Lemon": "22",
 		"id": 33,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/d1/37/d1376f9f6835e1eb5e66333859e06665.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/hangover-shot-62"
+		"source_URL": "https://juicerecipes.com/recipes/hangover-shot-62"
 	},
 	{
 		"ounces": "16oz",
@@ -582,7 +580,7 @@ var juices = [
 		"Strawberry": "19",
 		"id": 34,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/5a/92/5a92df49197ca1b8bb32addedf99fc70.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/appleberry-lush-105"
+		"source_URL": "https://juicerecipes.com/recipes/appleberry-lush-105"
 	},
 	{
 		"ounces": "8oz",
@@ -597,7 +595,7 @@ var juices = [
 		"Ginger Root": "5",
 		"id": 35,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/5e/0f/5e0f813f9adfa315067119530a4af7cb.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/ginger-paradise-21"
+		"source_URL": "https://juicerecipes.com/recipes/ginger-paradise-21"
 	},
 	{
 		"ounces": "20oz",
@@ -613,7 +611,7 @@ var juices = [
 		"Lime": "9",
 		"id": 36,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/10/64/10642e8aa704685ea9972e79fefd5f4b.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/popeye-power-56"
+		"source_URL": "https://juicerecipes.com/recipes/popeye-power-56"
 	},
 	{
 		"ounces": "22oz",
@@ -630,7 +628,7 @@ var juices = [
 		"Carrot": "8",
 		"id": 37,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/f6/98/f698f0bee7c7f1b617f091278dee9b49.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/sunset-blend-65"
+		"source_URL": "https://juicerecipes.com/recipes/sunset-blend-65"
 	},
 	{
 		"ounces": "18oz",
@@ -645,7 +643,7 @@ var juices = [
 		"Peppermint": "0",
 		"id": 38,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/bd/f9/bdf9deee3738980c7ccd6402f81d0190.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/crazy-cantaloupe-32"
+		"source_URL": "https://juicerecipes.com/recipes/crazy-cantaloupe-32"
 	},
 	{
 		"ounces": "26oz",
@@ -661,7 +659,7 @@ var juices = [
 		"Ginger Root": "3",
 		"id": 39,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/cd/46/cd46336405cc93bf0cb4b64d4845cb10.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/lemon-essence-35"
+		"source_URL": "https://juicerecipes.com/recipes/lemon-essence-35"
 	},
 	{
 		"ounces": "18oz",
@@ -680,7 +678,7 @@ var juices = [
 		"Cider Vinegar": "2",
 		"id": 40,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/4c/87/4c874d6dc3d5f9e7ef39e495a369df6e.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/purple-power-51"
+		"source_URL": "https://juicerecipes.com/recipes/purple-power-51"
 	},
 	{
 		"ounces": "28oz",
@@ -699,7 +697,7 @@ var juices = [
 		"Peppermint": "0",
 		"id": 41,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/b2/ba/b2ba1cfa334f5beefc5396290bcd9113.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/lean-green-117"
+		"source_URL": "https://juicerecipes.com/recipes/lean-green-117"
 	},
 	{
 		"ounces": "28oz",
@@ -716,7 +714,7 @@ var juices = [
 		"Ginger Root": "2",
 		"id": 42,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/db/ac/dbaca40a6b976923cb4a8dc0de639c95.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/green-ginger-ale-85"
+		"source_URL": "https://juicerecipes.com/recipes/green-ginger-ale-85"
 	},
 	{
 		"ounces": "32oz",
@@ -735,7 +733,7 @@ var juices = [
 		"Parsley": "3",
 		"id": 43,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/4f/51/4f51907f8b5545ba7cbab8ab402c87c6.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/any-time-cocktail-92"
+		"source_URL": "https://juicerecipes.com/recipes/any-time-cocktail-92"
 	},
 	{
 		"ounces": "32oz",
@@ -750,7 +748,7 @@ var juices = [
 		"Lemon": "5",
 		"id": 44,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/f0/d7/f0d7cddba537173dff03c895fec7f3e5.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/breast-cancer-awareness-juice-40"
+		"source_URL": "https://juicerecipes.com/recipes/breast-cancer-awareness-juice-40"
 	},
 	{
 		"ounces": "14oz",
@@ -769,7 +767,7 @@ var juices = [
 		"Jalapeno": "2",
 		"id": 45,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/6d/6b/6d6b843e14fb78e7f0321723c3529e38.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/red-tangy-spice-54"
+		"source_URL": "https://juicerecipes.com/recipes/red-tangy-spice-54"
 	},
 	{
 		"ounces": "22oz",
@@ -786,7 +784,7 @@ var juices = [
 		"Tomato": "12",
 		"id": 46,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/ab/ca/abca5b98fbdaac1d83418423e0815386.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/veggie-blueberry-34"
+		"source_URL": "https://juicerecipes.com/recipes/veggie-blueberry-34"
 	},
 	{
 		"ounces": "16oz",
@@ -802,7 +800,7 @@ var juices = [
 		"Kale": "6",
 		"id": 47,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/e9/17/e9176a2d07db22ec0b46cf69d58385a0.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/dr-schulzes-blood-building-juice-121"
+		"source_URL": "https://juicerecipes.com/recipes/dr-schulzes-blood-building-juice-121"
 	},
 	{
 		"ounces": "24oz",
@@ -820,7 +818,7 @@ var juices = [
 		"Peppermint": "0",
 		"id": 48,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/a7/27/a727599a796180a044683dae751182cb.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/stomach-soother-103"
+		"source_URL": "https://juicerecipes.com/recipes/stomach-soother-103"
 	},
 	{
 		"ounces": "16oz",
@@ -837,7 +835,7 @@ var juices = [
 		"Ginger Root": "1",
 		"id": 49,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/6d/2c/6d2c93ec204fcb9a9429d013b2ab993d.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/holiday-lemonade-89"
+		"source_URL": "https://juicerecipes.com/recipes/holiday-lemonade-89"
 	},
 	{
 		"ounces": "7oz",
@@ -853,7 +851,7 @@ var juices = [
 		"Spirulina (dried)": "1",
 		"id": 50,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/41/ef/41efe3d49d3069efa97e080410be79bc.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/hang-under-61"
+		"source_URL": "https://juicerecipes.com/recipes/hang-under-61"
 	},
 	{
 		"ounces": "20oz",
@@ -871,7 +869,7 @@ var juices = [
 		"Lemon": "5",
 		"id": 51,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/b8/75/b8752a327cc75613fd1253cd558a42f6.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/tracees-green-workout-juice-90"
+		"source_URL": "https://juicerecipes.com/recipes/tracees-green-workout-juice-90"
 	},
 	{
 		"ounces": "32oz",
@@ -890,7 +888,7 @@ var juices = [
 		"Ginger Root": "2",
 		"id": 52,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/70/2e/702ef7bec86cee51ec5629479c26d0cf.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/turmeric-sunrise-98"
+		"source_URL": "https://juicerecipes.com/recipes/turmeric-sunrise-98"
 	},
 	{
 		"ounces": "20oz",
@@ -908,7 +906,7 @@ var juices = [
 		"Cayenne Pepper (spice)": "0",
 		"id": 53,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/1a/ca/1acaf8640172b3eb39e7da69f4f96b4a.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/sweet-southern-comfort-2094"
+		"source_URL": "https://juicerecipes.com/recipes/sweet-southern-comfort-2094"
 	},
 	{
 		"ounces": "16oz",
@@ -923,7 +921,7 @@ var juices = [
 		"Beet Root": "10",
 		"id": 54,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/91/a8/91a8dfdf3dfe345ea6fea0256c1934ae.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/remembering-your-abcs-38"
+		"source_URL": "https://juicerecipes.com/recipes/remembering-your-abcs-38"
 	},
 	{
 		"ounces": "11oz",
@@ -937,7 +935,7 @@ var juices = [
 		"Celery": "26",
 		"id": 55,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/35/c0/35c0d6bad9d7299f5126779336973343.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/sweet-n-simple-15"
+		"source_URL": "https://juicerecipes.com/recipes/sweet-n-simple-15"
 	},
 	{
 		"ounces": "14oz",
@@ -955,7 +953,7 @@ var juices = [
 		"Pumpkin Pie Spice": "0",
 		"id": 56,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/0d/14/0d142f7b29477f66c6c8c4cf5c81e5df.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/golden-spice-46"
+		"source_URL": "https://juicerecipes.com/recipes/golden-spice-46"
 	},
 	{
 		"ounces": "28oz",
@@ -975,7 +973,7 @@ var juices = [
 		"Spinach": "4",
 		"id": 57,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/c7/ff/c7ff33206dbaea2919a52db5833156b8.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/martha-stewarts-green-juice-48"
+		"source_URL": "https://juicerecipes.com/recipes/martha-stewarts-green-juice-48"
 	},
 	{
 		"ounces": "22oz",
@@ -993,7 +991,7 @@ var juices = [
 		"Peppermint": "0",
 		"id": 58,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/ea/fd/eafd02f098fb6fdaedab2c72dfb8e555.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/strawberry-mint-julep-113"
+		"source_URL": "https://juicerecipes.com/recipes/strawberry-mint-julep-113"
 	},
 	{
 		"ounces": "32oz",
@@ -1008,7 +1006,7 @@ var juices = [
 		"Celery": "10",
 		"id": 59,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/05/cc/05cce2556210706ad3c69f5ddb1eacf3.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/apple-crisp-84"
+		"source_URL": "https://juicerecipes.com/recipes/apple-crisp-84"
 	},
 	{
 		"ounces": "32oz",
@@ -1026,7 +1024,7 @@ var juices = [
 		"Ginger Root": "1",
 		"id": 60,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/56/62/5662b680205b1b0bc84708ed96425ac8.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/cant-beet-it-1"
+		"source_URL": "https://juicerecipes.com/recipes/cant-beet-it-1"
 	},
 	{
 		"ounces": "32oz",
@@ -1045,7 +1043,7 @@ var juices = [
 		"Ginger Root": "1",
 		"id": 61,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/ed/75/ed75c9dadcbe11cee5c8634e03521e76.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/wingman-99"
+		"source_URL": "https://juicerecipes.com/recipes/wingman-99"
 	},
 	{
 		"ounces": "32oz",
@@ -1063,7 +1061,7 @@ var juices = [
 		"Spinach": "11",
 		"id": 62,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/60/00/600006f8b86f3984a26a0875ebdd99ed.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/pomegranate-green-91"
+		"source_URL": "https://juicerecipes.com/recipes/pomegranate-green-91"
 	},
 	{
 		"ounces": "20oz",
@@ -1079,7 +1077,7 @@ var juices = [
 		"Honey": "1",
 		"id": 63,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/f0/93/f09322fbdfd9e03d5654440ead72c785.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/sun-kissed-109"
+		"source_URL": "https://juicerecipes.com/recipes/sun-kissed-109"
 	},
 	{
 		"ounces": "30oz",
@@ -1097,7 +1095,7 @@ var juices = [
 		"Ginger Root": "1",
 		"id": 64,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/d8/35/d8355905d61c83b3f9cb0208be678394.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/man-golden-juice-37"
+		"source_URL": "https://juicerecipes.com/recipes/man-golden-juice-37"
 	},
 	{
 		"ounces": "8oz",
@@ -1111,7 +1109,7 @@ var juices = [
 		"Honey": "6",
 		"id": 65,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/10/37/1037a9442b70ab7cdded623bbf925c84.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/sleepy-time-juice-42"
+		"source_URL": "https://juicerecipes.com/recipes/sleepy-time-juice-42"
 	},
 	{
 		"ounces": "24oz",
@@ -1128,7 +1126,7 @@ var juices = [
 		"Brussel Sprout": "2",
 		"id": 66,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/15/c1/15c16cff291b3ad706c85468a0bac19e.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/flower-power-71"
+		"source_URL": "https://juicerecipes.com/recipes/flower-power-71"
 	},
 	{
 		"ounces": "12oz",
@@ -1143,7 +1141,7 @@ var juices = [
 		"Honey": "1",
 		"id": 67,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/ec/21/ec215e86674def003c240c738a7a5bb9.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/dr-ozs-swimsuit-slimdown-drink-115"
+		"source_URL": "https://juicerecipes.com/recipes/dr-ozs-swimsuit-slimdown-drink-115"
 	},
 	{
 		"ounces": "12oz",
@@ -1159,7 +1157,7 @@ var juices = [
 		"Spinach": "6",
 		"id": 68,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/97/e9/97e9e4bb4a4005de43fa016de28dedfe.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/splendid-spinach-26"
+		"source_URL": "https://juicerecipes.com/recipes/splendid-spinach-26"
 	},
 	{
 		"ounces": "20oz",
@@ -1174,7 +1172,7 @@ var juices = [
 		"Lime": "4",
 		"id": 69,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/d7/02/d702437fcf0d1be9fa0a8d53090ee574.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/berry-a-peeling-75"
+		"source_URL": "https://juicerecipes.com/recipes/berry-a-peeling-75"
 	},
 	{
 		"ounces": "16oz",
@@ -1189,7 +1187,7 @@ var juices = [
 		"Lemon": "6",
 		"id": 70,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/d8/a4/d8a4c2f07f2fb5ca53042de4aa156cc1.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/dragon-blood-53"
+		"source_URL": "https://juicerecipes.com/recipes/dragon-blood-53"
 	},
 	{
 		"ounces": "16oz",
@@ -1206,7 +1204,7 @@ var juices = [
 		"Ginger Root": "1",
 		"id": 71,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/e3/16/e31647159b10403239456b49a4cf3db7.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/beet-retreat-114"
+		"source_URL": "https://juicerecipes.com/recipes/beet-retreat-114"
 	},
 	{
 		"ounces": "28oz",
@@ -1225,7 +1223,7 @@ var juices = [
 		"Spinach": "5",
 		"id": 72,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/d4/fb/d4fb62d83904c982c97943e230ce341a.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/green-breakfast-58"
+		"source_URL": "https://juicerecipes.com/recipes/green-breakfast-58"
 	},
 	{
 		"ounces": "12oz",
@@ -1245,7 +1243,7 @@ var juices = [
 		"Salt": "0",
 		"id": 73,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/9c/c7/9cc73c8859e82f354ebbfdf83fe84736.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/fresh-salsa-49"
+		"source_URL": "https://juicerecipes.com/recipes/fresh-salsa-49"
 	},
 	{
 		"name": "Full Of Kale-cium",
@@ -1262,7 +1260,7 @@ var juices = [
 		"Collard Greens": "5",
 		"id": 74,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/ca/2f/ca2f0bf54124b1b952bb74f0b58507f3.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/full-kale-cium-22"
+		"source_URL": "https://juicerecipes.com/recipes/full-kale-cium-22"
 	},
 	{
 		"ounces": "32oz",
@@ -1277,7 +1275,7 @@ var juices = [
 		"Lime": "7",
 		"id": 75,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/88/14/88143841fe1b36821ce31eda94d2c019.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/purple-passion-83"
+		"source_URL": "https://juicerecipes.com/recipes/purple-passion-83"
 	},
 	{
 		"ounces": "22oz",
@@ -1294,7 +1292,7 @@ var juices = [
 		"Lemon": "4",
 		"id": 76,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/f0/1f/f01f503ab139e992a97cd3b35003a654.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/orange-crush-104"
+		"source_URL": "https://juicerecipes.com/recipes/orange-crush-104"
 	},
 	{
 		"ounces": "30oz",
@@ -1311,7 +1309,7 @@ var juices = [
 		"Sweet Potato": "11",
 		"id": 77,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/f4/93/f4938a04a261f20f63643386c34dd735.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/creamsicle-86"
+		"source_URL": "https://juicerecipes.com/recipes/creamsicle-86"
 	},
 	{
 		"ounces": "30oz",
@@ -1329,7 +1327,7 @@ var juices = [
 		"Lime": "2",
 		"id": 78,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/a7/e5/a7e52ca26346579eef333b2f9481ca4c.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/fruity-punch-twist-60"
+		"source_URL": "https://juicerecipes.com/recipes/fruity-punch-twist-60"
 	},
 	{
 		"ounces": "30oz",
@@ -1344,7 +1342,7 @@ var juices = [
 		"Orange": "14",
 		"id": 79,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/73/ad/73ad32dcb695ae93f605569e7546bf4b.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/eye-opener-77"
+		"source_URL": "https://juicerecipes.com/recipes/eye-opener-77"
 	},
 	{
 		"ounces": "16oz",
@@ -1361,7 +1359,7 @@ var juices = [
 		"Peppermint": "0",
 		"id": 80,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/51/75/51753c92cf9a6163d391cdf4b6fbb4bb.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/blackberry-pop-66"
+		"source_URL": "https://juicerecipes.com/recipes/blackberry-pop-66"
 	},
 	{
 		"ounces": "24oz",
@@ -1378,7 +1376,7 @@ var juices = [
 		"Pumpkin Pie Spice": "0",
 		"id": 81,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/0a/9d/0a9d800a45f42c5185c9ca950ef26759.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/pumpkin-colada-cream-111"
+		"source_URL": "https://juicerecipes.com/recipes/pumpkin-colada-cream-111"
 	},
 	{
 		"ounces": "18oz",
@@ -1394,7 +1392,7 @@ var juices = [
 		"Orange": "22",
 		"id": 82,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/4d/b4/4db432bd53fe2f769f3dcc9b9218f3b8.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/pink-panther-110"
+		"source_URL": "https://juicerecipes.com/recipes/pink-panther-110"
 	},
 	{
 		"ounces": "12oz",
@@ -1409,7 +1407,7 @@ var juices = [
 		"Carrot": "22",
 		"id": 83,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/e6/68/e668df6c17b35fdc3b5e01edd77b6213.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/morning-glory-29"
+		"source_URL": "https://juicerecipes.com/recipes/morning-glory-29"
 	},
 	{
 		"ounces": "16oz",
@@ -1425,7 +1423,7 @@ var juices = [
 		"Ginger Root": "2",
 		"id": 84,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/35/60/356067f3f16b2f54dd1c23fe35efefeb.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/lemon-ginger-zinger-52"
+		"source_URL": "https://juicerecipes.com/recipes/lemon-ginger-zinger-52"
 	},
 	{
 		"ounces": "30oz",
@@ -1443,7 +1441,7 @@ var juices = [
 		"Ginger Root": "1",
 		"id": 85,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/81/53/81535f405971e8159fc8c73e90d19d01.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/fog-cutter-81"
+		"source_URL": "https://juicerecipes.com/recipes/fog-cutter-81"
 	},
 	{
 		"ounces": "16oz",
@@ -1460,7 +1458,7 @@ var juices = [
 		"Basil (dried)": "0",
 		"id": 86,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/81/df/81df652c8fc5ecf3e4fff7ca8f4bb5bd.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/liquid-pizza-55"
+		"source_URL": "https://juicerecipes.com/recipes/liquid-pizza-55"
 	},
 	{
 		"ounces": "20oz",
@@ -1478,7 +1476,7 @@ var juices = [
 		"Spirulina (dried)": "1",
 		"id": 87,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/b3/21/b321654e28a77d79fd34835255753245.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/workout-buddy-50"
+		"source_URL": "https://juicerecipes.com/recipes/workout-buddy-50"
 	},
 	{
 		"ounces": "16oz",
@@ -1495,7 +1493,7 @@ var juices = [
 		"Garlic": "1",
 		"id": 88,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/a7/33/a733de60a0b8f108e65880c075be5b49.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/full-immunity-20"
+		"source_URL": "https://juicerecipes.com/recipes/full-immunity-20"
 	},
 	{
 		"ounces": "30oz",
@@ -1512,7 +1510,7 @@ var juices = [
 		"Spinach": "8",
 		"id": 89,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/ec/7d/ec7d494a38fb0b32c823eafb86a0da0d.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/beet-nik-79"
+		"source_URL": "https://juicerecipes.com/recipes/beet-nik-79"
 	},
 	{
 		"ounces": "32oz",
@@ -1528,7 +1526,7 @@ var juices = [
 		"Lemon": "5",
 		"id": 90,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/00/39/00393b9946f4c8201ccbc7abc2ddcaec.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/nice-green-70"
+		"source_URL": "https://juicerecipes.com/recipes/nice-green-70"
 	},
 	{
 		"ounces": "24oz",
@@ -1545,7 +1543,7 @@ var juices = [
 		"Peppermint": "0",
 		"id": 91,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/ff/41/ff41de02c691fe1579b47b99d16f2dfd.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/midsummer-nights-dream-1765"
+		"source_URL": "https://juicerecipes.com/recipes/midsummer-nights-dream-1765"
 	},
 	{
 		"ounces": "18oz",
@@ -1560,7 +1558,7 @@ var juices = [
 		"Sweet Potato": "15",
 		"id": 92,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/1f/8e/1f8e0cab8937a8339ae2f6b649b65af4.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/sweet-potato-pie-88"
+		"source_URL": "https://juicerecipes.com/recipes/sweet-potato-pie-88"
 	},
 	{
 		"ounces": "14oz",
@@ -1576,7 +1574,7 @@ var juices = [
 		"Peppermint": "0",
 		"id": 93,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/3a/61/3a61bf05684b2b3db0cdbe8cac4adccc.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/strawberry-pineapple-mint-43"
+		"source_URL": "https://juicerecipes.com/recipes/strawberry-pineapple-mint-43"
 	},
 	{
 		"ounces": "20oz",
@@ -1593,7 +1591,7 @@ var juices = [
 		"Lemon": "3",
 		"id": 94,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/04/e2/04e2b39dd22d548d7ffa700285d94d02.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/pomegranate-pizazz-94"
+		"source_URL": "https://juicerecipes.com/recipes/pomegranate-pizazz-94"
 	},
 	{
 		"ounces": "16oz",
@@ -1608,7 +1606,7 @@ var juices = [
 		"Sweet Potato": "14",
 		"id": 95,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/d7/7a/d77a6a0e88c84c7182a3f10e924bb35d.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/dont-forget-your-roots-24"
+		"source_URL": "https://juicerecipes.com/recipes/dont-forget-your-roots-24"
 	},
 	{
 		"ounces": "18oz",
@@ -1626,7 +1624,7 @@ var juices = [
 		"Cinnamon (Ground)": "0",
 		"id": 96,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/c5/92/c592c0b81ed87015b2a27745b7831670.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/sweet-beets-5"
+		"source_URL": "https://juicerecipes.com/recipes/sweet-beets-5"
 	},
 	{
 		"ounces": "30oz",
@@ -1645,7 +1643,7 @@ var juices = [
 		"Ginger Root": "2",
 		"id": 97,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/6f/aa/6faa3873c2e9403b08be56b8489af2e6.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/rainbow-blitz-80"
+		"source_URL": "https://juicerecipes.com/recipes/rainbow-blitz-80"
 	},
 	{
 		"ounces": "16oz",
@@ -1662,7 +1660,7 @@ var juices = [
 		"Cinnamon (Ground)": "0",
 		"id": 98,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/8c/81/8c81259b54db25902051006b1bf2dcbe.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/harry-potter-juice-112"
+		"source_URL": "https://juicerecipes.com/recipes/harry-potter-juice-112"
 	},
 	{
 		"ounces": "28oz",
@@ -1677,7 +1675,7 @@ var juices = [
 		"Peach": "19",
 		"id": 99,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/19/95/1995ef83fa557aa3d5e97236ff5a36e8.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/tropical-tango-31"
+		"source_URL": "https://juicerecipes.com/recipes/tropical-tango-31"
 	},
 	{
 		"ounces": "18oz",
@@ -1695,7 +1693,7 @@ var juices = [
 		"Honey": "1",
 		"id": 100,
 		"imageUrl_alt": "https://juicerecipes.com/media/cache/06/f6/06f69cbb669f91df72be2fe8a9974683.jpg",
-		"_pageUrl": "https://juicerecipes.com/recipes/adios-coffee-19"
+		"source_URL": "https://juicerecipes.com/recipes/adios-coffee-19"
 	},
 	{
 		"name": "Blood Building",
@@ -1704,6 +1702,6 @@ var juices = [
 		"directions": "Process all ingredients in a juicer, shake or stir and serve.",
 		"imageUrl": "https://juicerecipes.com/media/cache/1b/60/1b604ef6e73f80022be6dab53e4c3b77.jpg",
 		"id": 101,
-		"_pageUrl": "https://juicerecipes.com/recipes/blood-building-2566"
+		"source_URL": "https://juicerecipes.com/recipes/blood-building-2566"
 	}
 ];
