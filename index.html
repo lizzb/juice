@@ -1,10 +1,8 @@
 <!doctype html>
-<html lang="en" ng-app="phonecatApp">
+<html lang="en" ng-app="juicerecipesApp">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-  <title>PhoneCat app example -- Google Phone Gallery</title>
 
   <!--<title>PhoneCat app example -- Google Phone Gallery</title>-->
     <title>Juice by lizzb</title>
@@ -140,7 +138,7 @@
 
 </head>
 
-<body ng-controller="PhoneListCtrl">
+<body ng-controller="JuiceListCtrl">
 
     <div ng-view></div>
 
@@ -242,7 +240,7 @@ Fruits
              <i class="fa fa-heart"></i> Partner &nbsp;&nbsp;&nbsp;
           </span>-->
 
-<script type="text/ng-template" id="phone-list.html">
+<script type="text/ng-template" id="juice-list.html">
 
   <div class="wrapper">
     <header>
@@ -268,19 +266,24 @@ Fruits
       Sort by:
       <select ng-model="orderProp">
         <option value="name">Alphabetical</option>
-        <option value="age">Newest</option>
+        <option value="ounces">Yield</option>
       </select>
 
+      <br>
+      Number of results: {{filtered.length}} (out of {{juices.length}})
+
+
+      <!--{{ selectedFilters | json}}-->
 
     </header>
     <section>
       <!--Body content-->
 
-      <ul class="phones">
-        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp" class="thumbnail">
-          <a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
-          <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
-          <p>{{phone.description}}</p>
+      <ul class="juices">
+        <li ng-repeat="juice in filtered=(juices | filter:query | orderBy:orderProp)" class="thumbnail"><!-- filter:filterByProperties |  -->
+          <a href="#/juices/{{juice.id}}" class="thumb"><img ng-src="{{juice.imageUrl}}"></a>
+          <a href="#/juices/{{juice.id}}">{{juice.name}}</a>
+          <p>{{juice.description}}</p>
         </li>
       </ul>
 
@@ -295,19 +298,19 @@ Fruits
 </script>
 
 
-<script type="text/ng-template" id="phone-detail.html">
+<script type="text/ng-template" id="juice-detail.html">
 
-<img ng-src="{{phone.imageUrl}}" class="phone">
+<img ng-src="{{juice.imageUrl}}" class="phone">
 <!--<img ng-src="{{mainImageUrl}}" class="phone">-->
 
-<h1><a href="{{phone.source_URL}}" target="_blank">{{phone.name}}</a></h1>
+<h1><a href="{{juice.source_URL}}" target="_blank">{{juice.name}}</a></h1>
 
-<p>{{phone.my_percentages}}</p>
+<p>{{juice.my_percentages}}</p>
 
 <!-- i dont have any other images for a drink, just the main -->
 <!--
 <ul class="phone-thumbs">
-   <li ng-repeat="img in phone.images">
+   <li ng-repeat="img in juice.images">
     <img ng-src="{{img}}" ng-click="setImage(img)">
   </li>
 </ul>
@@ -318,136 +321,58 @@ Fruits
     <span>Description</span>
     <dl>
       <!--<dt>Description</dt>-->
-      <dd>{{phone.description}}</dd>
+      <dd>{{juice.description}}</dd>
     </dl>
   </li>
   <li>
     <span>Ingredients</span>
     <dl>
       <!--<dt>Ingredients</dt>-->
-      <!--<dd ng-repeat="availability in phone.availability">{{availability}}</dd>-->
-      <dd>{{phone.ingredients}}</dd>
+      <!--<dd ng-repeat="availability in juice.availability">{{availability}}</dd>-->
+      <dd>{{juice.ingredients}}</dd>
     </dl>
   </li>
   <li>
     <span>Directions</span>
     <dl>
       <!--<dt>Directions</dt>-->
-      <dd>{{phone.directions}}</dd>
+      <dd>{{juice.directions}}</dd>
     </dl>
   </li>
   <li>
     <span>Yield</span>
     <dl>
       <!--<dt>Yield (Ounces)</dt>-->
-      <dd>{{phone.ounces}}</dd>
+      <dd>{{juice.ounces}}</dd>
     </dl>
   </li>
   <!--
-  <li>
-    <span>Battery</span>
-    <dl>
-      <dt>Type</dt>
-      <dd>{{phone.battery.type}}</dd>
-      <dt>Talk Time</dt>
-      <dd>{{phone.battery.talkTime}}</dd>
-      <dt>Standby time (max)</dt>
-      <dd>{{phone.battery.standbyTime}}</dd>
-    </dl>
-  </li>
-  -->
-  <!--
-  <li>
-    <span>Storage and Memory</span>
-    <dl>
-      <dt>RAM</dt>
-      <dd>{{phone.storage.ram}}</dd>
-      <dt>Internal Storage</dt>
-      <dd>{{phone.storage.flash}}</dd>
-    </dl>
-  </li>
   <li>
     <span>Connectivity</span>
     <dl>
       <dt>Network Support</dt>
-      <dd>{{phone.connectivity.cell}}</dd>
+      <dd>{{juice.connectivity.cell}}</dd>
       <dt>WiFi</dt>
-      <dd>{{phone.connectivity.wifi}}</dd>
+      <dd>{{juice.connectivity.wifi}}</dd>
       <dt>Bluetooth</dt>
-      <dd>{{phone.connectivity.bluetooth}}</dd>
+      <dd>{{juice.connectivity.bluetooth}}</dd>
 
       <dt>Infrared</dt>
-      <dd>{{phone.connectivity.infrared | checkmark}}</dd>
+      <dd>{{juice.connectivity.infrared | checkmark}}</dd>
       <dt>GPS</dt>
-      <dd>{{phone.connectivity.gps | checkmark}}</dd>
+      <dd>{{juice.connectivity.gps | checkmark}}</dd>
 
     </dl>
   </li>
-  <li>
-    <span>Android</span>
-    <dl>
-      <dt>OS Version</dt>
-      <dd>{{phone.android.os}}</dd>
-      <dt>UI</dt>
-      <dd>{{phone.android.ui}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Size and Weight</span>
-    <dl>
-      <dt>Dimensions</dt>
-      <dd ng-repeat="dim in phone.sizeAndWeight.dimensions">{{dim}}</dd>
-      <dt>Weight</dt>
-      <dd>{{phone.sizeAndWeight.weight}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Display</span>
-    <dl>
-      <dt>Screen size</dt>
-      <dd>{{phone.display.screenSize}}</dd>
-      <dt>Screen resolution</dt>
-      <dd>{{phone.display.screenResolution}}</dd>
-      <dt>Touch screen</dt>
-      <dd>{{phone.display.touchScreen}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Hardware</span>
-    <dl>
-      <dt>CPU</dt>
-      <dd>{{phone.hardware.cpu}}</dd>
-      <dt>USB</dt>
-      <dd>{{phone.hardware.usb}}</dd>
-      <dt>Audio / headphone jack</dt>
-      <dd>{{phone.hardware.audioJack}}</dd>
-      <dt>FM Radio</dt>
-      <dd>{{phone.hardware.fmRadio}}</dd>
-      <dt>Accelerometer</dt>
-      <dd>{{phone.hardware.accelerometer}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Camera</span>
-    <dl>
-      <dt>Primary</dt>
-      <dd>{{phone.camera.primary}}</dd>
-      <dt>Features</dt>
-      <dd>{{phone.camera.features.join(', ')}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Additional Features</span>
-    <dd>{{phone.additionalFeatures}}</dd>
-  </li>
+  -->
 </ul>
--->
+
 </script>
 
 <script src="http://lizzb.github.io/juice/javascripts/scale.fix.js"></script>
 
     <!-- contains juices array -->
-    <script src="http://lizzb.github.io/juice/javascripts/list.js"></script>
+    <script src="http://lizzb.github.io/juice/javascripts/juicelist.js"></script>
 
 
 <script>
@@ -456,58 +381,34 @@ Fruits
 //var phonecatApp = angular.module('phonecatApp', []);
 // var phonecatApp = angular.module('phonecatApp', ['ngRoute','phonecatControllers']);
 
-var phonecatApp = angular.module('phonecatApp', ['ngRoute']);
+var juicerecipesApp = angular.module('juicerecipesApp', ['ngRoute']);
 
-phonecatApp.config(['$routeProvider',
+juicerecipesApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/phones', {
-        templateUrl: 'phone-list.html',
-        controller: 'PhoneListCtrl'
+      when('/juices', {
+        templateUrl: 'juice-list.html',
+        controller: 'JuiceListCtrl'
       }).
-      when('/phones/:phoneId', {
-        templateUrl: 'phone-detail.html',
-        controller: 'PhoneDetailCtrl'
+      when('/juices/:phoneId', {
+        templateUrl: 'juice-detail.html',
+        controller: 'JuiceDetailCtrl'
       }).
       otherwise({
-        redirectTo: '/phones'
+        redirectTo: '/juices'
       });
   }]);
 
+
 /* Filters */
-
-/*
-angular.module('phonecatFilters', []).filter('checkmark', function() {
-    return function(input) {
-        return input ? '\u2713' : '\u2718';
-    };
-});
-*/
-phonecatApp.filter('checkmark', function() {
+juicerecipesApp.filter('checkmark', function() {
     return function(input) {
         return input ? '\u2713' : '\u2718';
     };
 });
 
 
-/*
-phonecatApp.controller('PhoneDetailCtrl', ['$scope', '$routeParams',
-  function($scope, $routeParams) {
-    $scope.phoneId = $routeParams.phoneId;
-  }]);
-*/
-
-/*
-http://angular.github.io/angular-phonecat/step-12/app/phones/{{}}.json
-
-
-http://angular.github.io/angular-phonecat/step-12/app/phones/samsung-galaxy-tab.json
-http://angular.github.io/angular-phonecat/step-12/app/img/phones/motorola-xoom-with-wi-fi.0.jpg
-
-snippet -- description
-*/
-
-phonecatApp.controller('PhoneDetailCtrl', ['$scope', '$routeParams', '$http',
+juicerecipesApp.controller('JuiceDetailCtrl', ['$scope', '$routeParams', '$http',
   function($scope, $routeParams, $http) {
     /*$http.get('http://angular.github.io/angular-phonecat/step-12/app/phones/' + $routeParams.phoneId + '.json').success(function(data) {
       $scope.phone = data;
@@ -518,15 +419,17 @@ phonecatApp.controller('PhoneDetailCtrl', ['$scope', '$routeParams', '$http',
       };
     });*/
 
-    console.log($scope.phones.length);
+
+
+    console.log($scope.juices.length);
 
     var data = 0;
-    // fine the phone in the phones array with matching id
-    for(var i=0; i<$scope.phones.length; i++) {
-      if ($scope.phones[i].id == $routeParams.phoneId)
-        data = $scope.phones[i];
+    // find the juice in the juices array with matching id
+    for(var i=0; i<$scope.juices.length; i++) {
+      if ($scope.juices[i].id == $routeParams.phoneId)
+        data = $scope.juices[i];
     }
-    $scope.phone = data;
+    $scope.juice = data;
       //$scope.mainImageUrl = data.images[0];
       $scope.mainImageUrl = data.imageUrl;
 
@@ -536,51 +439,21 @@ phonecatApp.controller('PhoneDetailCtrl', ['$scope', '$routeParams', '$http',
 
   }]);
 
-/* to add to filters potentially
-Beet Root (golden)
-Honey
-Apple (fuji)
-Beet Root
-Salt (himalayan)
-Cayenne Pepper (spice)
-Cilantro
-Onion (spring/scallion)
-Pumpkin Pie Spice
-Lemon (with rind)
-*/
 
-phonecatApp.controller('PhoneListCtrl', function($scope) {
-//###phonecatApp.controller('PhoneListCtrl', ['$scope', '$http', function($scope, $http) {
-    /*
-    $scope.phones = [{
-        'name': 'Nexus S',
-        'snippet': 'Fast just got faster with Nexus S.',
-        'age': 1
-    }, {
-        'name': 'Motorola XOOM™ with Wi-Fi',
-        'snippet': 'The Next, Next Generation tablet.',
-        'age': 2
-    }, {
-        'name': 'MOTOROLA XOOM™',
-        'snippet': 'The Next, Next Generation tablet.',
-        'age': 3
-    }];
-    */
+juicerecipesApp.controller('JuiceListCtrl', function($scope) {
+//###juicerecipesApp.controller('PhoneListCtrl', ['$scope', '$http', function($scope, $http) {
 
     /*
     $http.get('http://angular.github.io/angular-phonecat/step-12/app/phones/phones.json').success(function(data) {
       $scope.phones = data;
     });
-
-    http://angular.github.io/angular-phonecat/step-7/app/img/phones/motorola-xoom-with-wi-fi.0.jpg
-
-    http://angular.github.io/angular-phonecat/step-12/app/img/phones/motorola-xoom-with-wi-fi.0.jpg
-
-    http://angular.github.io/angular-phonecat/step-12/app/img/phones/motorola-xoom-with-wi-fi.0.jpg
     */
 
-    /* this array was created with http://jsbin.com/tugutox/3/edit?html,js,output */
-    $scope.phones = juices;
+    /*
+    this array was created with jsbin.com/tugutox/3/edit?html,js,output
+    modified at https://jsbin.com/hocubi/edit?js,output
+    */
+    $scope.juices = juices;
 
     $scope.orderProp = 'age';
 
@@ -599,6 +472,102 @@ phonecatApp.controller('PhoneListCtrl', function($scope) {
     $scope.asc = ($scope.sortProp === sortProp) ? !$scope.asc : false;
     $scope.sortProp = sortProp;
   }
+
+  // following is bulkier than i need, but i just want this quick and dirty for now
+// see https://plnkr.co/edit/FSvv0ll8Izyol3fX5yjg?p=preview
+
+// for each item in the cbckbox model, if dataObj has the property, return true ('passes' the filter successfully), else return false
+
+      $scope.filterByProperties = function(dataObj) {
+        console.log("check dataObj has property Apple...dataObj['Apple']: "+dataObj['Apple']);
+        //console.log("return value == true..."+!!(dataObj['Apple']));
+
+        console.log("value to return: "+!!(dataObj['Apple']));
+        /*var matchesAND = true;
+        for (var parentProp in $scope.selectedFilters) {
+          for (var childProp in parentProp) {
+            console.log('childProp'+ childProp+ ' | parentProp' + parentProp);
+            console.log('!dataObj[childProp]'+ !dataObj[childProp]);
+            if (!dataObj[childProp]) {
+              matchedAND = false;
+              break;
+            }
+          }
+        }*/
+        // return true if contains the prop, false if it doesnt
+        return !!(dataObj['Apple']);
+      }
+// or http://stackoverflow.com/questions/14514461/how-to-bind-to-list-of-checkbox-values-with-angularjs
+  /*
+  // types: fruit,vegetable, nuts and seeds, sweetener, herbs and spices
+{ name: "Apple", type: "fruit", checked: "" },
+{ name: "Asparagus", type: "vegetable", checked: "" },
+{ name: "Avocado", type: "fruit", checked: "" },
+{ name: "Basil (dried)", type: "herbs and spices", checked: "" },
+{ name: "Basil (fresh)", type: "herbs and spices", checked: "" },
+{ name: "Beet Greens", type: "vegetable", checked: "" },
+{ name: "Beet Root", type: "vegetable", checked: "" },
+{ name: "Bell Pepper (green)", type: "vegetable", checked: "" },
+{ name: "Bell Pepper (red)", type: "vegetable", checked: "" },
+{ name: "Bitter Melon", type: "vegetable", checked: "" },
+{ name: "Blackberry", type: "fruit", checked: "" },
+{ name: "Blueberry", type: "fruit", checked: "" },
+{ name: "Broccoli", type: "vegetable", checked: "" },
+{ name: "Brussel Sprout", type: "vegetable", checked: "" },
+{ name: "Cabbage (red)", type: "vegetable", checked: "" },
+{ name: "Carrot", type: "vegetable", checked: "" },
+{ name: "Cauliflower", type: "vegetable", checked: "" },
+{ name: "Cayenne Pepper (spice)", type: "herbs and spices", checked: "" },
+{ name: "Celery", type: "vegetable", checked: "" },
+{ name: "Chard (swiss)", type: "vegetable", checked: "" },
+{ name: "Cider Vinegar", type: "herbs and spices", checked: "" },
+{ name: "Cilantro", type: "vegetable", checked: "" },
+{ name: "Cinnamon (Ground)", type: "herbs and spices", checked: "" },
+{ name: "Coconut", type: "nuts and seeds", checked: "" },
+{ name: "Coconut Milk", type: "nuts and seeds", checked: "" },
+{ name: "Coconut Water", type: "nuts and seeds", checked: "" },
+{ name: "Collard Greens", type: "vegetable", checked: "" },
+{ name: "Cranberries", type: "fruit", checked: "" },
+{ name: "Cucumber", type: "vegetable", checked: "" },
+{ name: "Dandelion Greens", type: "vegetable", checked: "" },
+{ name: "Fennel Bulb", type: "vegetable", checked: "" },
+{ name: "Garlic", type: "vegetable", checked: "" },
+{ name: "Ginger Root", type: "vegetable", checked: "" },
+{ name: "Grapefruit", type: "fruit", checked: "" },
+{ name: "Grapes", type: "fruit", checked: "" },
+{ name: "Green Tea", type: "vegetable", checked: "" },
+{ name: "Honey", type: "sweetener", checked: "" },
+{ name: "Jalapeno", type: "vegetable", checked: "" },
+{ name: "Kale", type: "vegetable", checked: "" },
+{ name: "Kiwifruit", type: "fruit", checked: "" },
+{ name: "Lemon", type: "fruit", checked: "" },
+{ name: "Lettuce (romaine)", type: "vegetable", checked: "" },
+{ name: "Lime", type: "fruit", checked: "" },
+{ name: "Mango", type: "fruit", checked: "" },
+{ name: "Melon (cantaloupe)", type: "fruit", checked: "" },
+{ name: "Nutmeg (ground)", type: "herbs and spices", checked: "" },
+{ name: "Olive Oil", type: "other", checked: "" },
+{ name: "Onion (spring/scallion)", type: "vegetable", checked: "" },
+{ name: "Orange", type: "fruit", checked: "" },
+{ name: "Papaya", type: "fruit", checked: "" },
+{ name: "Parsley", type: "vegetable", checked: "" },
+{ name: "Peach", type: "fruit", checked: "" },
+{ name: "Pear", type: "fruit", checked: "" },
+{ name: "Peppermint", type: "herbs and spices", checked: "" },
+{ name: "Pineapple", type: "fruit", checked: "" },
+{ name: "Pomegranate", type: "fruit", checked: "" },
+{ name: "Pumpkin", type: "vegetable", checked: "" },
+{ name: "Pumpkin Pie Spice", type: "herbs and spices", checked: "" },
+{ name: "Salt", type: "herbs and spices", checked: "" },
+{ name: "Sparkling Water", type: "other", checked: "" },
+{ name: "Spinach", type: "vegetable", checked: "" },
+{ name: "Spirulina (dried)", type: "vegetable", checked: "" },
+{ name: "Strawberry", type: "fruit", checked: "" },
+{ name: "Sweet Potato", type: "vegetable", checked: "" },
+{ name: "Tomato", type: "vegetable", checked: "" },
+{ name: "Turmeric Root", type: "vegetable", checked: "" },
+{ name: "Watermelon", type: "fruit", checked: "" }
+*/
 
 });
 
